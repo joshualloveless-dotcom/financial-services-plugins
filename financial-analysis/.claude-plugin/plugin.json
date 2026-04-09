@@ -2,7 +2,134 @@
   "name": "financial-analysis",
   "version": "0.1.0",
   "description": "Core financial modeling and analysis tools: DCF, comps, LBO, 3-statement models, competitive analysis, and deck QC",
+  "type": "core",
   "author": {
     "name": "Anthropic FSI"
+  },
+  "commands": [
+    {
+      "name": "dcf",
+      "description": "Build an institutional-quality DCF valuation model with sensitivity analysis"
+    },
+    {
+      "name": "comps",
+      "description": "Build a comparable company analysis with trading multiples in Excel"
+    },
+    {
+      "name": "lbo",
+      "description": "Build an LBO model for a private equity acquisition"
+    },
+    {
+      "name": "3-statement-model",
+      "description": "Populate an integrated 3-statement financial model from SEC filings"
+    },
+    {
+      "name": "competitive-analysis",
+      "description": "Build a competitive landscape analysis deck"
+    },
+    {
+      "name": "check-deck",
+      "description": "QC a presentation for number consistency, data-narrative alignment, and IB standards"
+    },
+    {
+      "name": "ppt-template",
+      "description": "Create a reusable PPT template skill from a provided PowerPoint template"
+    },
+    {
+      "name": "debug-model",
+      "description": "Audit a spreadsheet for formula errors, circular references, and logic issues"
+    }
+  ],
+  "skills": [
+    {
+      "name": "dcf-model",
+      "description": "Real DCF model creation for equity valuation with WACC, sensitivity analysis, and Excel output"
+    },
+    {
+      "name": "comps-analysis",
+      "description": "Institutional-grade comparable company analysis with operating metrics and valuation multiples"
+    },
+    {
+      "name": "lbo-model",
+      "description": "LBO model template completion for private equity transactions"
+    },
+    {
+      "name": "3-statement-model",
+      "description": "Complete and populate integrated IS/BS/CF financial model templates"
+    },
+    {
+      "name": "competitive-analysis",
+      "description": "Competitive landscape mapping — market positioning, competitor deep-dives, strategic synthesis"
+    },
+    {
+      "name": "audit-xls",
+      "description": "Audit a spreadsheet for formula accuracy, errors, and financial model integrity"
+    },
+    {
+      "name": "clean-data-xls",
+      "description": "Clean messy spreadsheet data — whitespace, casing, type conversions, deduplication"
+    },
+    {
+      "name": "deck-refresh",
+      "description": "Update numbers across a presentation for quarterly refreshes and earnings updates"
+    },
+    {
+      "name": "ib-check-deck",
+      "description": "Investment banking presentation QC across number consistency, narrative, language, and formatting"
+    },
+    {
+      "name": "ppt-template-creator",
+      "description": "Create reusable PPT template skills from user-provided PowerPoint templates"
+    },
+    {
+      "name": "skill-creator",
+      "description": "Guide for creating and updating skills that extend Claude with specialized workflows"
+    }
+  ],
+  "mcpServers": {
+    "daloopa": {
+      "type": "http",
+      "url": "https://mcp.daloopa.com/server/mcp"
+    },
+    "morningstar": {
+      "type": "http",
+      "url": "https://mcp.morningstar.com/mcp"
+    },
+    "sp-global": {
+      "type": "http",
+      "url": "https://kfinance.kensho.com/integrations/mcp"
+    },
+    "factset": {
+      "type": "http",
+      "url": "https://mcp.factset.com/mcp"
+    },
+    "moodys": {
+      "type": "http",
+      "url": "https://api.moodys.com/genai-ready-data/m1/mcp"
+    },
+    "mtnewswire": {
+      "type": "http",
+      "url": "https://vast-mcp.blueskyapi.com/mtnewswires"
+    },
+    "aiera": {
+      "type": "http",
+      "url": "https://mcp-pub.aiera.com"
+    },
+    "lseg": {
+      "type": "http",
+      "url": "https://api.analytics.lseg.com/lfa/mcp"
+    },
+    "pitchbook": {
+      "type": "http",
+      "url": "https://premium.mcp.pitchbook.com/mcp"
+    },
+    "chronograph": {
+      "type": "http",
+      "url": "https://ai.chronograph.pe/mcp"
+    },
+    "egnyte": {
+      "type": "http",
+      "url": "https://mcp-server.egnyte.com/mcp"
+    }
   }
 }
