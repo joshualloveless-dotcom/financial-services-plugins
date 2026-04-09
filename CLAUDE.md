@@ -5,7 +5,17 @@ This is a marketplace of Claude Cowork plugins for financial services profession
 ## Repository Structure
 
 ```
-├── investment-banking/  # Investment banking productivity
+├── financial-analysis/        # Core financial modeling and analysis (install first)
+├── investment-banking/        # Investment banking productivity
+├── equity-research/           # Equity research workflows
+├── private-equity/            # Private equity deal sourcing and workflow
+├── wealth-management/         # Wealth management and financial advisory
+├── partner-built/
+│   ├── lseg/                  # LSEG financial data and analytics
+│   └── spglobal/              # S&P Global financial data and analytics
+├── claude-in-office/          # Microsoft 365 Claude Office add-in deployment
+└── .claude-plugin/
+    └── marketplace.json       # Marketplace manifest (registers all plugins)
 ```
 
 ## Plugin Structure
