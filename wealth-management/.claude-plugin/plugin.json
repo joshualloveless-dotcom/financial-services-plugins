@@ -2,7 +2,67 @@
   "name": "wealth-management",
   "version": "0.1.0",
   "description": "Wealth management and financial advisory tools: client reviews, financial planning, portfolio analysis, and client reporting",
+  "type": "addon",
   "author": {
     "name": "Anthropic FSI"
-  }
+  },
+  "requires": ["financial-analysis"],
+  "commands": [
+    {
+      "name": "client-report",
+      "description": "Generate a client performance report",
+      "argument-hint": "[client name] [period, e.g. Q4 2025]"
+    },
+    {
+      "name": "client-review",
+      "description": "Prep for a client review meeting",
+      "argument-hint": "[client name]"
+    },
+    {
+      "name": "financial-plan",
+      "description": "Build or update a financial plan",
+      "argument-hint": "[client name]"
+    },
+    {
+      "name": "proposal",
+      "description": "Create an investment proposal for a prospect",
+      "argument-hint": "[prospect name]"
+    },
+    {
+      "name": "rebalance",
+      "description": "Analyze drift and generate rebalancing trades",
+      "argument-hint": "[client name or account]"
+    },
+    {
+      "name": "tlh",
+      "description": "Identify tax-loss harvesting opportunities",
+      "argument-hint": "[client name or account]"
+    }
+  ],
+  "skills": [
+    {
+      "name": "client-report",
+      "description": "Generate professional client-facing performance reports with returns, allocations, and market commentary"
+    },
+    {
+      "name": "client-review",
+      "description": "Prepare meeting packages with performance summary, allocation analysis, talking points, and action items"
+    },
+    {
+      "name": "financial-plan",
+      "description": "Build comprehensive financial plans covering retirement, education funding, estate planning, and cash flow"
+    },
+    {
+      "name": "investment-proposal",
+      "description": "Create personalized investment proposals covering approach, allocation, expected outcomes, and fee structure"
+    },
+    {
+      "name": "portfolio-rebalance",
+      "description": "Analyze allocation drift and generate tax-aware rebalancing trade recommendations"
+    },
+    {
+      "name": "tax-loss-harvesting",
+      "description": "Identify harvestable losses, suggest replacement securities, and track wash sale windows"
+    }
+  ]
 }
