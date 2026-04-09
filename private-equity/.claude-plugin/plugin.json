@@ -2,7 +2,103 @@
   "name": "private-equity",
   "version": "0.1.0",
   "description": "Private equity deal sourcing and workflow tools: company discovery, CRM integration, and founder outreach",
+  "type": "addon",
   "author": {
     "name": "Anthropic FSI"
-  }
+  },
+  "requires": ["financial-analysis"],
+  "commands": [
+    {
+      "name": "ai-readiness",
+      "description": "Scan the portfolio for the highest-leverage AI opportunities",
+      "argument-hint": "[path to quarterly materials folder, or company names]"
+    },
+    {
+      "name": "dd-checklist",
+      "description": "Generate a due diligence checklist",
+      "argument-hint": "[company name]"
+    },
+    {
+      "name": "dd-prep",
+      "description": "Prep for a diligence meeting or expert call",
+      "argument-hint": "[company name] [meeting type]"
+    },
+    {
+      "name": "ic-memo",
+      "description": "Draft an investment committee memo",
+      "argument-hint": "[company name]"
+    },
+    {
+      "name": "portfolio",
+      "description": "Review portfolio company performance",
+      "argument-hint": "[company name or path to financial package]"
+    },
+    {
+      "name": "returns",
+      "description": "Build IRR/MOIC sensitivity tables",
+      "argument-hint": "[company or deal parameters]"
+    },
+    {
+      "name": "screen-deal",
+      "description": "Screen an inbound deal (CIM or teaser)",
+      "argument-hint": "[path to CIM/teaser file]"
+    },
+    {
+      "name": "source",
+      "description": "Source deals — discover companies and draft founder outreach",
+      "argument-hint": "[sector or criteria, e.g. 'industrial services in Texas $10-50M']"
+    },
+    {
+      "name": "unit-economics",
+      "description": "Analyze unit economics (ARR cohorts, LTV/CAC, retention)",
+      "argument-hint": "[company name or path to data]"
+    },
+    {
+      "name": "value-creation",
+      "description": "Build a post-acquisition value creation plan",
+      "argument-hint": "[company name]"
+    }
+  ],
+  "skills": [
+    {
+      "name": "ai-readiness",
+      "description": "Scan the portfolio for the highest-leverage AI opportunities ranked by EBITDA impact"
+    },
+    {
+      "name": "dd-checklist",
+      "description": "Generate comprehensive due diligence checklists with status tracking and red flag escalation"
+    },
+    {
+      "name": "dd-meeting-prep",
+      "description": "Prepare targeted question lists, benchmarks, and red flags for diligence meetings and expert calls"
+    },
+    {
+      "name": "deal-screening",
+      "description": "Screen inbound deal flow against fund investment criteria with a one-page screening memo output"
+    },
+    {
+      "name": "deal-sourcing",
+      "description": "Discover target companies, check CRM for relationships, and draft personalized founder outreach"
+    },
+    {
+      "name": "ic-memo",
+      "description": "Draft structured investment committee memos synthesizing diligence findings and deal terms"
+    },
+    {
+      "name": "portfolio-monitoring",
+      "description": "Track portfolio company performance against plan with KPI extraction and variance flagging"
+    },
+    {
+      "name": "returns-analysis",
+      "description": "Build IRR/MOIC sensitivity tables across entry multiple, leverage, exit multiple, and hold period"
+    },
+    {
+      "name": "unit-economics",
+      "description": "Analyze ARR cohorts, LTV/CAC, net retention, and revenue quality for recurring revenue businesses"
+    },
+    {
+      "name": "value-creation-plan",
+      "description": "Structure post-acquisition value creation plans with EBITDA bridge and 100-day priorities"
+    }
+  ]
 }
