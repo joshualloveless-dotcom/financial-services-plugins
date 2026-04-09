@@ -2,7 +2,93 @@
   "name": "equity-research",
   "version": "0.1.0",
   "description": "Equity research tools: earnings analysis, initiating coverage reports, and research workflows",
+  "type": "addon",
   "author": {
     "name": "Anthropic FSI"
-  }
+  },
+  "requires": ["financial-analysis"],
+  "commands": [
+    {
+      "name": "catalysts",
+      "description": "View or update the catalyst calendar",
+      "argument-hint": "[timeframe, e.g. 'next 2 weeks']"
+    },
+    {
+      "name": "earnings-preview",
+      "description": "Build a pre-earnings preview with scenarios",
+      "argument-hint": "[company ticker]"
+    },
+    {
+      "name": "earnings",
+      "description": "Analyze quarterly earnings and create an earnings update report",
+      "argument-hint": "[company name or ticker] [quarter, e.g. Q3 2024]"
+    },
+    {
+      "name": "initiate",
+      "description": "Create an initiating coverage report",
+      "argument-hint": "[company ticker]"
+    },
+    {
+      "name": "model-update",
+      "description": "Update a financial model with new data",
+      "argument-hint": "[company ticker]"
+    },
+    {
+      "name": "morning-note",
+      "description": "Draft a morning meeting note"
+    },
+    {
+      "name": "screen",
+      "description": "Run a stock screen or generate investment ideas",
+      "argument-hint": "[screen criteria, e.g. 'undervalued midcap tech']"
+    },
+    {
+      "name": "sector",
+      "description": "Create a sector overview report",
+      "argument-hint": "[sector or industry]"
+    },
+    {
+      "name": "thesis",
+      "description": "Create or update an investment thesis",
+      "argument-hint": "[company ticker]"
+    }
+  ],
+  "skills": [
+    {
+      "name": "catalyst-calendar",
+      "description": "Build and maintain a calendar of upcoming catalysts across the coverage universe"
+    },
+    {
+      "name": "earnings-analysis",
+      "description": "Create professional equity research earnings update reports analyzing quarterly results"
+    },
+    {
+      "name": "earnings-preview",
+      "description": "Build pre-earnings analysis with estimate models, scenarios, and key metrics to watch"
+    },
+    {
+      "name": "idea-generation",
+      "description": "Systematic stock screening and investment idea sourcing via quantitative screens and thematic research"
+    },
+    {
+      "name": "initiating-coverage",
+      "description": "Create institutional-quality equity research initiation reports through a 5-task workflow"
+    },
+    {
+      "name": "model-update",
+      "description": "Update financial models with new earnings, guidance, or revised assumptions"
+    },
+    {
+      "name": "morning-note",
+      "description": "Draft concise morning meeting notes summarizing overnight developments and trade ideas"
+    },
+    {
+      "name": "sector-overview",
+      "description": "Create comprehensive industry and sector landscape reports covering market dynamics and competitive positioning"
+    },
+    {
+      "name": "thesis-tracker",
+      "description": "Maintain and update investment theses, tracking catalysts and thesis milestones over time"
+    }
+  ]
 }
